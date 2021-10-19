@@ -5,42 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Le Monde</title>
 </head>
 <body>
-    <header>
-        <div class="rectangle"></div>
-        <nav>
-            <div>
-                <figure>
-                    <img src="">
-                </figure>
-                <figure id="lemonde">
-                    <img src="assets/lemonde.svg">
-                </figure>
-            </div>
-            <figure class="menu">
-                <span>MENU</span>
-                <img class="burger" src="/test-Bourseul/assets/icon-menu.svg">
-            </figure>
-            <div>
-                <figure class="menu2">
-                    <span>MENU</span>
-                    <img src="/test-Bourseul/assets/icon-menu-1.svg">
-                </figure>
-                <ul class="overlay">
-                    <li class="cta"><a href="#">Lorem ipsum</a></li>
-                    <li class="cta"><a href="#">Pellentesque</a></li>
-                    <li class="cta"><a href="#">Parturient</a></li>
-                    <li class="cta"><a href="#">Iaculis quis non ex</a></li>
-                </ul>
-            </div>
+    <header class="main-header">
+        <!-- Lien de retour vers le site lemonde donc a -->
+        <a href="https://lemonde.fr/" class="header-home">
+            <!-- En image pour avoir l'alt, le picto maison qui est plus de la décoration que du contenu est en css -->
+            <img src="assets/lemonde.svg" alt="Le Monde">
+        </a>
+        <!-- Action qui reste sur la page = bouton -->
+        <button class="menu-btn">
+            Menu <span class="menu-icon"></span>
+        </button>
+        <nav class="main-menu">
+            <!-- On peut mettre ou non le UL dans le nav, les deux sont justifiable -->
+            <ul>
+                <!-- Les texte sont formatés de manière normal, c'est dans le CSS qu'on les capitalizent -->
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Pellentesque</a></li>
+                <li><a href="#">Parturient</a></li>
+                <li><a href="#">Paculis quis non ex</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <figure id="accroche">
-            <img src="/test-Bourseul/assets/image-accroche-2.jpg">
+            <img src="assets/image-accroche-2.jpg">
         </figure>
         <div>
             <section>
@@ -63,7 +55,7 @@
                         nisi ut aliquid ex ea commodi consequatur?
                     </p>
                     <figure class="marge">
-                        <img src="/test-Bourseul/assets/image-corps-1.jpg">
+                        <img src="assets/image-corps-1.jpg">
                         <figcaption>Fugiat perferendis ipsam delectus vitae laborum magnam quas.</figcaption>
                     </figure>
                     <p class="marge">
@@ -87,13 +79,11 @@
                         praesentium velit nesciunt molestiae quae repellendus odit assumenda magnam quasi tempora.
                         Fugit optio suscipit soluta.
                     </p>
-                    <aside>
-                        <p class="marge">
-                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
-                            I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
-                            the master-builder of human happiness.
-                        </p>
-                    </aside>
+                    <blockquote>
+                        «&nbsp;Eget viverra mauris. Nullam tempor libero ut porttitor tempus. Etiam et quam quis purus commodo fringilla id in
+                        mauris. Duis luctus dui sapien. Proin vel turpis nulla. Sed tincidunt bibendum ex, eget placerat tortor pulvinar id.
+                        Curabitur gravida diam justo, non hendrerit metus suscipit et.&nbsp;»
+                    </blockquote>
                     <p class="marge">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                         voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
@@ -107,7 +97,7 @@
                         ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
                     </p>
                     <figure class="marge">
-                        <img src="/test-Bourseul/assets/image-corps-2.jpg">
+                        <img src="assets/image-corps-2.jpg">
                         <figcaption>Fugiat perferendis ipsam delectus vitae laborum magnam quas.</figcaption>
                     </figure>
                     <p class="marge">
@@ -132,6 +122,6 @@
             </section>
         </div>
     </main>
-        <script src="main.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>

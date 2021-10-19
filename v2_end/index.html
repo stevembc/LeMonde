@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem ipsum dolor sit amet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="main-header">
+    <!-- Lien de retour vers le site lemonde donc a -->
+    <a href="https://lemonde.fr/" class="header-home">
+      <!-- En image pour avoir l'alt mais le picto maison qui est plus de la décoration que du contenu est en css -->
+      <img src="images/lemonde.svg" alt="Le Monde">
+    </a>
+    <!-- Action qui reste sur la page = bouton -->
+    <button class="menu-btn">
+      Menu <span class="menu-icon"></span>
+    </button>
+    <nav class="main-menu">
+      <!-- On peut mettre ou non le UL dans le nav, les deux sont justifiable -->
+      <ul>
+        <!-- Les texte sont formatés de manière normal, c'est dans le CSS qu'on les capitalizent -->
+        <li><a href="#">Lorem ipsum</a></li>
+        <li><a href="#">Pellentesque</a></li>
+        <li><a href="#">Parturient</a></li>
+        <li><a href="#">Paculis quis non ex</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+
+    <!-- Les deux section de l'article qui ont des largeurs différentes, 1000px -->
+    <section class="article-title">
+      <h1>
+        Lorem ipsum<span class="line-break-m"></span> dolor sit amet
+      </h1>
+      <picture>
+        <!-- L'element picture permet de changer le format de l'image selon la largeur -->
+        <source srcset="images/image-accroche-large.jpg" media="(min-width: 620px)">
+        <source srcset="images/image-accroche-mobile.jpg 375w, images/image-accroche-mobile@2x.jpg 750w">
+        <img src="images/image-accroche-large.jpg" alt="" /><!-- On donne l'image desktop pour les navigateurs qui ne comprennent pas picture a.k.a. IE -->
+      </picture>
+    </section>
+
+    <!-- Les deux section de l'article qui ont des largeurs différentes, 620px -->
+    <section class="article-content">
+      <!-- On structure le contenu avec des éléments de base pour rester le plus minimaliste possible p, figure, blockquote -->
+      <p>
+        <strong>Consectetur adipiscing elit. Phasellus mattis viverra justo, vitae fringilla est consequat sed. Donec gravida, felis eu
+        lacinia aliquam, est purus sagittis leo, id rhoncus ex velit non dui.</strong>
+      </p>
+      <p>
+        Sed consequat augue lorem, quis ornare nibh rhoncus et. Sed maximus facilisis libero, ut hendrerit magna mattis at. Nam
+        condimentum vitae odio vitae commodo. Vivamus convallis interdum iaculis. Morbi molestie urna diam, vitae cursus libero
+        tristique vel. Cras enim nisl, iaculis vitae aliquam at, ornare sed erat. Vestibulum dui diam, convallis a eros a,
+        pretium tristique sem. Quisque egestas commodo tincidunt. Phasellus tincidunt ex quam, ultrices tempor purus viverra
+        vitae. Suspendisse pellentesque ipsum id scelerisque venenatis. Nulla facilisi. Duis malesuada lacinia auctor.
+      </p>
+      <figure>
+        <!-- Ici des images qui ne change pas de format, donc srcset pour les formats different suffit -->
+        <img src="images/image-corps-1-large.jpg"
+          srcset="images/image-corps-1-mobile.jpg 375w,
+                  images/image-corps-1-large.jpg 620w"
+          alt="">
+        <figcaption>Nunc suscipit metus nisl, quis varius arcu semper sit amet.</figcaption>
+      </figure>
+      <p>
+        Pellentesque posuere congue tellus at hendrerit. Duis non nulla interdum, accumsan purus eget, semper odio. Aliquam
+        commodo suscipit felis id dictum. Phasellus blandit lacinia nisi id blandit. Nunc suscipit metus nisl, quis varius arcu
+        semper sit amet. Duis scelerisque tellus in odio lobortis, ac gravida metus vehicula. Nunc id nunc vulputate, mollis
+        orci id, vulputate libero. Fusce laoreet sodales sem in tristique. Cras orci dolor, volutpat consectetur tristique vel,
+        sollicitudin ut est. Curabitur imperdiet rutrum orci, ut vestibulum lacus convallis at.
+      </p>
+      <h2>
+        Praesent sit amet fringilla justo
+      </h2>
+      <p>
+        Quisque rhoncus vel augue vitae maximus. Donec lectus odio, interdum nec mattis et, hendrerit at urna. Suspendisse id
+        justo cursus, imperdiet lectus sed, malesuada dolor. Quisque sit amet turpis efficitur est lobortis egestas eu a lectus.
+        Etiam rhoncus gravida dolor, rhoncus egestas justo. Sed at facilisis ex. Orci varius natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus. Nulla tincidunt id dui ac rutrum. Mauris rutrum gravida ligula ac porta.
+        Fusce sodales ipsum non sapien congue, a iaculis massa efficitur. Aliquam mattis mi eget lectus euismod mattis. Cras
+        rhoncus elementum condimentum.
+      </p>
+      <blockquote>
+        «&nbsp;Eget viverra mauris. Nullam tempor libero ut porttitor tempus. Etiam et quam quis purus commodo fringilla id in
+        mauris. Duis luctus dui sapien. Proin vel turpis nulla. Sed tincidunt bibendum ex, eget placerat tortor pulvinar id.
+        Curabitur gravida diam justo, non hendrerit metus suscipit et.&nbsp;»
+      </blockquote>
+      <p>
+        Donec pellentesque ipsum volutpat, mattis tellus id, tempor leo. Curabitur sed mattis mi. Nulla faucibus arcu non mollis
+        pharetra. Nam arcu urna, interdum in tellus nec, aliquet vulputate mauris. Nunc urna urna, varius sed porttitor quis,
+        lobortis sit amet magna. Suspendisse eleifend turpis et orci varius, accumsan vestibulum tellus suscipit. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Cras tempor malesuada nunc, in porttitor ligula vulputate quis. Morbi a
+        odio purus. Integer dictum, mauris at consequat faucibus, turpis nunc mattis quam, sit amet euismod ante eros sed eros.
+        Mauris mattis euismod sem. Vivamus eget orci nunc. Proin vel magna ac justo convallis finibus sit amet et turpis.
+      </p>
+      <figure>
+        <img src="images/image-corps-2-large.jpg"
+          srcset="images/image-corps-2-mobile.jpg 375w,
+                  images/image-corps-2-large.jpg 620w" alt="">
+        <figcaption>Maecenas scelerisque mauris metus, eget convallis risus suscipit in.</figcaption>
+      </figure>
+      <p>
+        Duis aliquet cursus lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas scelerisque mauris
+        metus, eget convallis risus suscipit in. Ut eget diam bibendum, vulputate ex nec, mattis ex. Mauris id nunc eu tellus
+        facilisis porta ut vel massa. Sed pulvinar efficitur lectus, vel hendrerit erat ornare ac. Quisque rhoncus at nulla quis
+        tristique. Integer cursus sagittis dui vel iaculis. Nunc vel lacus magna.
+      </p>
+      <p>
+        Pellentesque condimentum felis id eros porttitor, a faucibus est feugiat. Maecenas tempor orci suscipit odio ultricies
+        convallis. Praesent dignissim, leo nec tincidunt faucibus, diam odio molestie lorem, sed pulvinar lorem mauris eget
+        libero. Morbi vel justo massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Pellentesque dictum turpis ut eros mollis iaculis quis non ex. Aenean placerat dapibus ex, eu aliquet lorem tincidunt
+        ac. Sed nisi tellus, placerat eget nisi sodales, vulputate aliquet neque.
+      </p>
+    </section>
+  </article>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
