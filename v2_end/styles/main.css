@@ -1,7 +1,5 @@
-/*
- * Styles généraux
- */
 
+  /* Style de base */
 *, *::before, *::after{
   /* on change le comportement du box sizing en gardant la possibilité de le remettre sur des elements */
   box-sizing: inherit;
@@ -12,6 +10,8 @@ html{
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
+  /* Smooth Scrolling Effect */
+  scroll-behavior: smooth;
 }
 
 body{
@@ -46,7 +46,7 @@ img{
 
 button{
   /* reset des boutons */
-  cursor: pointer; /* il y a deux écoles, la main en curseur semble plus intuitif */
+  cursor: pointer; /* La main en curseur semble plus intuitif */
   padding: 0;
   outline: 0;
   border: none;
@@ -55,9 +55,7 @@ button{
 }
 
 
-/*
- * Header et menu
- */
+/* Header Menu */
 
 .main-header{
   display: flex;
@@ -105,7 +103,7 @@ button{
 }
 
 .menu-btn::before{
-  /* Hover avec un before pour se compliquer la vie */
+  /* Hover avec un before */
   content: " ";
   position: absolute;
   top: 0; left: 0;
@@ -204,10 +202,7 @@ button{
 }
 
 
-/*
- * Article
- */
-
+  /* Text Content */
 article{
   /* Décalage du contenu pour le header */
   padding-top: 50px;
@@ -228,8 +223,7 @@ article{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-.article-content, h1 /* on veut aligner le h1 a l'article alors autant le mettre le même style */{
-  /* le max-width nous gère déjà presque tout le responsive destop dès le style mobile */
+.article-content, h1 { /* on veut aligner le h1 a l'article alors autant le mettre le même style */
   max-width: 660px; /* 20 + 620 + 20 */
   margin: 0 auto;
   padding-left: 20px;
@@ -262,12 +256,6 @@ h2, p, figure, blockquote{
 }
 
 figure{
-  /*
-   * Une methode pour faire en sorte que les elements sortent du padding
-   * - Inconvénient : le bloc risque d'être crop si on ne fait pas attention
-   * - Avantage : les autres méthodes demandent des découpes de html plus complexes,
-   *   ou de placer chaque elements, et donc un cout de maintien plus important
-   */
   margin-left: -20px;
   margin-right: -20px;
 }
@@ -366,12 +354,9 @@ blockquote::before{
     margin-bottom: 135px;
   }
 
-  /*
-   * Menu
-   */
-
+    /* Navigation barre */
   .main-menu-open article{
-    opacity: 1; /* fix menu ouvert mobile puis desktop */
+    opacity: 1;
   }
 
   .menu-btn{
